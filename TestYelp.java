@@ -15,6 +15,8 @@ public class TestYelp {
 		
 		
 		driver.get("http://www.yelp.com");	
+		driver.manage().window().maximize();
+		
 		WebElement navigation = driver.findElement(By.xpath("//div[@class='navigation']"));
 				
 		List<WebElement> links = new ArrayList<WebElement>(navigation.findElements(By.tagName("li")));
