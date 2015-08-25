@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class TestYelp {
 	public static WebDriver driver = new FirefoxDriver();
+	driver.manage().window().maximize();
 	
 	public static void main(String[] args) throws InterruptedException {
 		
